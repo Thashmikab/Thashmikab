@@ -89,10 +89,9 @@ class Thash:
         }
 
         self.contact = {
-            "email": "your.email@example.com",                       # TODO
-            "linkedin": "https://www.linkedin.com/in/your-handle/",  # TODO
-            "scholar": "https://scholar.google.com/...",             # TODO
-            "orcid": "https://orcid.org/...",                        # TODO
+            "email": "thashmikab@gmail.com",                       
+            "linkedin": "https://www.linkedin.com/in/thashmika-bandara-kmtr/",  
+            "scholar": "https://scholar.google.com/citations?hl=en&user=qhvuVRcAAAAJ",
         }
 
         self.motivation = "Making the energy transition cleaner, all the way down to the materials."
