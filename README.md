@@ -2,6 +2,10 @@
   <img src="assets/banner.svg" alt="Thashmika Bandara — offshore wind turbines with a copper export cable carrying power to shore" width="100%">
 </p>
 
+<p align="center">
+  <a href="https://thashmikab.github.io/My_Journey/"><b>🌊 Explore my research journey →</b></a>
+</p>
+
 ```python
 class Thash:
     def __init__(self):
@@ -96,6 +100,7 @@ class Thash:
             "email": "thashmikab@gmail.com",                       
             "linkedin": "https://www.linkedin.com/in/thashmika-bandara-kmtr/",  
             "scholar": "https://scholar.google.com/citations?hl=en&user=qhvuVRcAAAAJ",
+            "website": "https://thashmikab.github.io/My_Journey/",
         }
 
         self.motivation = "Making the energy transition cleaner, all the way down to the materials."
