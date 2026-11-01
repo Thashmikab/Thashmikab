@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/banner.svg" alt="Thashmika Bandara — offshore wind turbines with a copper export cable carrying power to shore" width="100%">
+</p>
+
 ```python
 class Thash:
     def __init__(self):
@@ -105,6 +109,7 @@ me = Thash()
 
 | Project | What it shows |
 |---|---|
+| [paretolens](https://github.com/Thashmikab/paretolens) | A Python package for picking solutions from multi-objective Pareto fronts. It finds knee points and runs TOPSIS ranking, then writes an interactive HTML report straight from pymoo, CSV or Excel |
 | [offshore-wind-layout-cable-tradeoff](https://github.com/Thashmikab/offshore-wind-layout-cable-tradeoff) | Wind farm layout optimisation with PyWake/TopFarm and NSGA-II, trading energy yield against cable cost and environmental impact |
 | [london-smart-meter-analysis](https://github.com/Thashmikab/london-smart-meter-analysis) | Large-scale PySpark analysis of London smart meter data, testing whether time-of-use tariffs saved money and carbon, and clustering households by how much load they can shift |
 | QZ-NSGA-II | A quantum-inspired, zone-based variant of NSGA-II (an honest experiment, including where it got stuck) |
