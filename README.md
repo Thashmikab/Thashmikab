@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/header.svg" alt="Thashmika Bandara: From materials to megawatts. Thash stands on a ridge at night watching an offshore wind farm send copper-carried power to a city, beneath a copper planet orbited by his skills and a Pareto-front constellation of his projects" width="100%">
+  <img src="assets/header.svg" alt="Thashmika Bandara: Engineering ideas into impact. Thash stands on a ridge at night watching an offshore wind farm send copper-carried power to a city, beneath a copper planet orbited by his skills and a Pareto-front constellation of his projects" width="100%">
 </p>
 
 <p align="center">
@@ -71,6 +71,6 @@ me = Thash()
 | [paretolens](https://github.com/Thashmikab/paretolens) | A Python package for picking solutions from multi-objective Pareto fronts. It finds knee points and runs TOPSIS ranking, then writes an interactive HTML report straight from pymoo, CSV or Excel |
 | [offshore-wind-layout-cable-tradeoff](https://github.com/Thashmikab/offshore-wind-layout-cable-tradeoff) | Wind farm layout optimisation with PyWake/TopFarm and NSGA-II, trading energy yield against cable cost and environmental impact |
 | [london-smart-meter-analysis](https://github.com/Thashmikab/london-smart-meter-analysis) | Large-scale PySpark analysis of London smart meter data, testing whether time-of-use tariffs saved money and carbon, and clustering households by how much load they can shift |
-| QZ-NSGA-II | A quantum-inspired, zone-based variant of NSGA-II (an honest experiment, including where it got stuck) |
+| [Q-NSGA-II](https://github.com/Thashmikab/Q-NSGA-II) | A quantum-inspired variant of NSGA-II, benchmarked against the standard algorithm, with an honest look at where it got stuck |
 
 More research code is being cleaned up and published over time.
