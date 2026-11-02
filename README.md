@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="Thashmika Bandara — offshore wind turbines with a copper export cable carrying power to shore" width="100%">
+  <img src="assets/header.svg" alt="Thashmika Bandara: From materials to megawatts. Thash stands on a ridge at night watching an offshore wind farm send copper-carried power to a city, beneath a copper planet orbited by his skills and a Pareto-front constellation of his projects" width="100%">
 </p>
 
 <p align="center">
