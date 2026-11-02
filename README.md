@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/avatar.svg" alt="Illustrated portrait of Thash: swept-up black hair, round glasses, short beard, navy suit and blue tie, with wind turbines turning behind" width="220">
+  <img src="assets/avatar.svg" alt="Illustrated Thash waves hello: swept-up black hair, round glasses, short beard, navy suit and blue tie, with wind turbines turning behind" width="220">
 </p>
 
 <p align="center">
@@ -15,7 +15,7 @@ class Thash:
     def __init__(self):
         self.name = "Thashmika Bandara"
         self.goes_by = "Thash"
-        self.avatar = "assets/avatar.svg"   # ↑ that's me, blinking
+        self.avatar = "assets/avatar.svg"   # ↑ that's me, waving hello
         self.role = [
             "PhD Candidate, Electrical & Electronic Engineering @ City St George's, University of London",
             "Visiting Lecturer (Data Science) @ York St John University, London",

@@ -35,19 +35,33 @@
   </defs>
 
   <style>
-    .breathe{animation:breathe 4.5s ease-in-out infinite}
+    .breathe{animation:breathe 5s ease-in-out infinite}
     @keyframes breathe{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
-    .head{animation:tilt 9s ease-in-out infinite;transform-origin:200px 270px}
-    @keyframes tilt{0%,100%{transform:rotate(0)}30%{transform:rotate(-1.6deg)}60%{transform:rotate(1.2deg)}}
-    .eye{transform-box:fill-box;transform-origin:center;animation:blink 5.2s infinite}
-    @keyframes blink{0%,44%,50%,100%{transform:scaleY(1)}47%{transform:scaleY(.08)}}
-    .glint{animation:glint 5.2s ease-in-out infinite}
-    @keyframes glint{0%,60%{transform:translateX(-70px)}78%,100%{transform:translateX(70px)}}
+    .head{animation:tilt 10s ease-in-out infinite;transform-origin:200px 270px}
+    @keyframes tilt{0%,8%{transform:rotate(0)}16%{transform:rotate(3deg)}34%{transform:rotate(2deg)}44%{transform:rotate(0)}
+      52%{transform:rotate(0) translateY(0)}55%{transform:rotate(-1deg) translateY(4px)}58%{transform:rotate(-1deg) translateY(0)}
+      61%{transform:rotate(-1deg) translateY(3px)}64%{transform:rotate(0) translateY(0)}80%{transform:rotate(-1.5deg)}100%{transform:rotate(0)}}
+    .arm{transform-origin:302px 338px;animation:arm 10s cubic-bezier(.4,0,.2,1) infinite}
+    @keyframes arm{0%,6%{transform:rotate(172deg)}14%{transform:rotate(12deg)}34%{transform:rotate(12deg)}43%,100%{transform:rotate(172deg)}}
+    .hand{transform-origin:312px 252px;animation:wave 10s ease-in-out infinite}
+    @keyframes wave{0%,14%{transform:rotate(0)}17%{transform:rotate(-20deg)}20.5%{transform:rotate(18deg)}24%{transform:rotate(-20deg)}
+      27.5%{transform:rotate(18deg)}31%{transform:rotate(-10deg)}34%,100%{transform:rotate(0)}}
+    .brows{animation:brows 10s ease-in-out infinite}
+    @keyframes brows{0%,12%{transform:translateY(0)}16%,32%{transform:translateY(-4px)}38%,100%{transform:translateY(0)}}
+    .bub{transform-box:fill-box;transform-origin:90% 90%;opacity:0}
+    .b1{animation:b1 10s ease-out infinite}
+    .b2{animation:b2 10s ease-out infinite}
+    @keyframes b1{0%,12%{opacity:0;transform:scale(.6)}15%{opacity:1;transform:scale(1.04)}16.5%,38%{opacity:1;transform:scale(1)}41%,100%{opacity:0;transform:scale(.9)}}
+    @keyframes b2{0%,46%{opacity:0;transform:scale(.6)}49%{opacity:1;transform:scale(1.04)}50.5%,78%{opacity:1;transform:scale(1)}81%,100%{opacity:0;transform:scale(.9)}}
+    .eye{transform-box:fill-box;transform-origin:center;animation:blink 10s infinite}
+    @keyframes blink{0%,4%,7%,44%,47%,86%,89%,100%{transform:scaleY(1)}5.5%,45.5%,87.5%{transform:scaleY(.08)}}
+    .glint{animation:glint 10s ease-in-out infinite}
+    @keyframes glint{0%,62%{transform:translateX(-70px)}72%,100%{transform:translateX(70px)}}
     .spark{animation:rise 6s linear infinite;opacity:0}
     @keyframes rise{0%{transform:translateY(0);opacity:0}15%{opacity:.9}100%{transform:translateY(-140px);opacity:0}}
     .ring{animation:ring 6s linear infinite;transform-origin:200px 200px}
     @keyframes ring{to{transform:rotate(360deg)}}
-    @media (prefers-reduced-motion: reduce){*{animation:none !important}.spark{opacity:.6}}
+    @media (prefers-reduced-motion: reduce){*{animation:none !important}.spark{opacity:.6}.arm{transform:rotate(172deg)}}
   </style>
 
   <!-- background -->
@@ -146,8 +160,10 @@
         <path d="M201 176 Q197 194 199 202 Q204 206 210 202" stroke="#8a5536" stroke-width="2.2" fill="none" stroke-linecap="round"/>
 
         <!-- eyebrows -->
+        <g class="brows">
         <path d="M152 152 Q168 141 189 148 L188 155 Q170 149 154 159 Z" fill="#17120f"/>
         <path d="M248 152 Q232 141 211 148 L212 155 Q230 149 246 159 Z" fill="#17120f"/>
+        </g>
 
         <!-- eyes (anime style) -->
         <g class="eye">
@@ -208,6 +224,33 @@
         </g>
         <path d="M184 114 C202 106 226 106 244 114 C230 110 210 111 196 116 Z" fill="#0d0c10"/>
       </g></g>
+
+      <!-- waving arm: pivots at the shoulder, hand pivots at the wrist -->
+      <g class="arm">
+        <path d="M282 346 L320 346 L327 266 L297 260 Z" fill="#26449a"/>
+        <path d="M299 262 L303 344" stroke="#1a2f6b" stroke-width="1.5" opacity=".45"/>
+        <path d="M298 262 L326 268 L327 256 L299 250 Z" fill="#eef0f7"/>
+        <g class="hand">
+          <path d="M300 252 C298 240 300 228 304 222 L324 224 C327 232 327 244 324 254 Z" fill="#c99877"/>
+          <rect x="301.5" y="200" width="6.5" height="27" rx="3.2" fill="#d3a27e"/>
+          <rect x="308.5" y="195" width="6.5" height="31" rx="3.2" fill="#d3a27e"/>
+          <rect x="315.5" y="198" width="6.5" height="29" rx="3.2" fill="#d3a27e"/>
+          <rect x="322" y="205" width="6" height="24" rx="3" fill="#cf9d79"/>
+          <path d="M302 240 C294 236 289 228 290 222 C292 218 297 220 300 226 L304 232 Z" fill="#c99877"/>
+          <path d="M304 236 Q313 240 322 236" stroke="#a8734f" stroke-width="1.2" fill="none" opacity=".6"/>
+        </g>
+      </g>
+    </g>
+
+    <!-- speech bubbles (left of the face, inside the circle) -->
+    <g class="bub b1">
+      <path d="M24 128 Q24 116 36 116 L124 116 Q136 116 136 128 L136 150 Q136 162 124 162 L120 162 L140 176 L104 162 L36 162 Q24 162 24 150 Z" fill="#ffffff"/>
+      <text x="80" y="145" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#0b1726">Hi, I'm Thash!</text>
+    </g>
+    <g class="bub b2">
+      <path d="M20 120 Q20 106 34 106 L126 106 Q140 106 140 120 L140 156 Q140 170 126 170 L122 170 L142 184 L104 170 L34 170 Q20 170 20 156 Z" fill="#ffffff"/>
+      <text x="80" y="133" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0b1726">I count the copper</text>
+      <text x="80" y="152" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0b1726">in clean energy</text>
     </g>
   </g>
 </svg>
